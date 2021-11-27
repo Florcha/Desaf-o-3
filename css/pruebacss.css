@@ -1,0 +1,70 @@
+nav {
+  background-color: blanchedalmond;
+  height: 90px;
+  color: #e61cdb; }
+
+div {
+  background-color: #f0df48;
+  border: solid 2px #eb3480;
+  color: #dff04a; }
+  div p {
+    color: #f365a7;
+    margin: 15px 2px 3px 8px;
+    padding: 15px 2px 3px 8px; }
+
+.color-main {
+  color: #eb4034; }
+
+div {
+  width: 28px; }
+
+div {
+  color: blue; }
+
+h1 {
+  font-size: 24em; }
+
+h2 {
+  font-size: 12em; }
+
+h3 {
+  font-size: 8em; }
+
+h4 {
+  font-size: 6em; }
+
+h5 {
+  font-size: 4.8em; }
+
+.color-red {
+  background-color: red; }
+
+.color-blue {
+  background-color: blue; }
+
+.color-green {
+  background-color: green; }
+
+.color-yellow {
+  background-color: yellow; }
+
+.btn-twitter {
+  background-color: #339be0; }
+
+.btn-facebook {
+  background-color: #16188b; }
+
+.btn-instagram {
+  background-color: #cc33e0; }
+
+.boton, .boton-primario {
+  border: solid 2px #ccc;
+  background-color: #7c7c7c; }
+
+.boton-primario {
+  color: red; }
+
+.box {
+  height: 100px;
+  width: 200px;
+  padding: 50px; }

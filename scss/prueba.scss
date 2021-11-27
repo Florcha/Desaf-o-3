@@ -1,0 +1,101 @@
+@import "variables/variables";
+@import "nav";
+
+div {
+    background-color: rgb(241, 172, 224);
+    border: $border;
+    color: $color-dos;
+
+    p {
+        color: $color-uno;
+        margin: $separacion;
+        padding: $separacion;
+    }
+}
+
+.color-main {
+    color:$color-uno;
+}
+
+
+/*Operaciones*/
+
+$ancho: 30px;
+
+div {
+    width: ($ancho*4)-2;
+}
+
+
+/*Condicionales*/
+
+$animal: gato;
+
+div {
+    @if $animal == loro {
+        color: rgb(143, 34, 233);
+    } @else if $animal != loro {
+        color: rgb(83, 247, 157);
+    }
+}
+
+
+/*Bucles*/
+
+@for $i from 1 to 6 {
+
+    h#{$i} {
+        font-size: 30em / $i;
+    }
+}
+
+/*Each*/
+
+$lista-colores: pink, black, orange;
+
+@each $color in $lista-colores {
+
+    .color-#{$color} {
+        background-color: $color;
+    }
+}
+
+
+ /*Mapas*/
+
+$redes: (
+    twitter: #4ab2f7,
+    facebook: #383bee,
+    instagram: #f50c0c,
+);
+
+@each $red, $color in $redes {
+    .btn-#{$red} {
+        background-color: $color;
+    }
+}
+
+/*Extend*/
+
+.boton {
+    border: solid 2px #ccc;
+    background-color: rgb(124, 124, 124);
+}
+
+.boton-primario {
+    @extend .boton;
+    color: red;
+}
+
+
+/*Mixin*/
+
+@mixin size($alto, $ancho) {
+    height: $alto;
+    width: $ancho;
+    padding: $alto;
+}
+
+.box {
+    @include size(50px, 10px)
+}
